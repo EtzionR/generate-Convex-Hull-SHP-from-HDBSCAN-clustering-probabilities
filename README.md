@@ -21,17 +21,18 @@ The boundary generated will be saved as a new SHP file. When we save the data, w
 -	Coordinates of the cluster center (**"center_x"** and **"center_y"**)
 -	Name and number of the cluster (**"id"** and **"name"**)
 
+An example of one of the SHP file created using the code can be seen in the **Boston** area:
+
+![Boston](https://github.com/EtzionData/generate-Convex-Hull-SHP-from-HDBSCAN-clustering-probabilities/blob/master/Picture/boston_example.jpg)
+
+The code will returned the data about each of the original points as a new pandas dataframe, along with their probability and label data. In addition, the code will also return the records that composed the SHP that created, also as dataframe.
+
 All the layers that used as examples in this repository, are also accessible: 
 
 [**original layers**](https://github.com/EtzionData/generate-Convex-Hull-SHP-from-HDBSCAN-clustering-probabilities/tree/master/layers)
 
 [**output layers**](https://github.com/EtzionData/generate-Convex-Hull-SHP-from-HDBSCAN-clustering-probabilities/tree/master/output)
 
-An example of one of the SHP file created using the code can be seen in the **Boston** area:
-
-![Boston](https://github.com/EtzionData/generate-Convex-Hull-SHP-from-HDBSCAN-clustering-probabilities/blob/master/Picture/boston_example.jpg)
-
-The code will returned the data about each of the original points as a new pandas dataframe, along with their probability and label data. In addition, the code will also return the records that composed the SHP that created, also as dataframe.
 
 
 ## libraries
