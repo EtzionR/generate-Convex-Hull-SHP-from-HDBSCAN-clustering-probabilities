@@ -2,7 +2,7 @@
 Defines a boundary around cluster centers in a given point shapefile
 
 ## introduction
-When we want to make a division into clusters of geographical coordinates, we often get inaccurate results. This is because the clustering algorithm often assigns points to a some cluster that do not necessarily have to be associated with it. This outcome creates a situation in which it is more difficult to define the boundaries of the cluster. In order to create a solution to this gap, the code "**convex_cluster.py**" was developed.
+When we want to make a division into clusters of geographical coordinates, we often get inaccurate results. This is because the clustering algorithm often assigns points to a some cluster that do not necessarily have to be associated with it. This outcome creates a situation in which it is more difficult to define the boundaries of the cluster. In order to create a solution to this gap, the code ["**convex_cluster.py**"](https://github.com/EtzionData/generate-Convex-Hull-SHP-from-HDBSCAN-clustering-probabilities/blob/master/convex_cluster.py) was developed.
 
 The code receives in the first step a esri shapefile (**SHP**), and extracts the X and Y coordinates from it. Another information he produces from the SHP is the **Geographic Coordinate System** of the layer, which will be used to save the code output as a new SHP.
 
@@ -10,7 +10,7 @@ Based on the given coordinates, the code performs clustering using the **HDBSCAN
 
 ![probability](https://github.com/EtzionData/generate-Convex-Hull-SHP-from-HDBSCAN-clustering-probabilities/blob/master/Picture/example%20-%20cluster%20probability%20values.png)
 
-As can be seen in the example, the closer a point is to the cluster center, the higher its probability, and closer to the value 1. In contrast, points farther from the center approach to 0. Every cluster can have a different density, based on its distribution characteristics. As you can see, different clusters can have a completely different density (the code used to generate the plot and documentation is available here: 'multi'):
+As can be seen in the example, the closer a point is to the cluster center, the higher its probability, and closer to the value 1. In contrast, points farther from the center approach to 0. Every cluster can have a different density, based on its distribution characteristics. As you can see, different clusters can have a completely different density (the code used to generate the plot and documentation is available here: [**multi-smooth-density-plot**](https://github.com/EtzionData/create-multi-smooth-density-plot)):
 
 ![density](https://github.com/EtzionData/generate-Convex-Hull-SHP-from-HDBSCAN-clustering-probabilities/blob/master/Picture/example%20-%20smooth%20density%20of%20cluster%20probabilities.png)
 
