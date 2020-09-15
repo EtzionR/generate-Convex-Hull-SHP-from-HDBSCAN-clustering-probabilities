@@ -37,13 +37,16 @@ The code will returned the data about each of the original points as a new panda
 ## libraries
 The code uses the following libraries in Python:
 
-**utm**
+**shapefile**
+
+**hdbscan**
+
+**pandas**
+
+**scipy**
 
 **numpy**
 
-**simplekml**
-
-**pandas**
 
 ## application
 An application of the code is attached to this page under the name: 
@@ -55,31 +58,25 @@ the examples outputs are also attached here.
 To use this code, you just need to import it as follows:
 ``` sh
 # import
-from sector_creator import create_sector_kml
-import pandas as pd
+from convex_cluster import convex_cluster as cc
 
 # define variables
-data = pd.read_csv(r'path\file.csv')
-name = 'name'
-x_field = 'x'
-y_field = 'y'
-angle = 'angle'
-distance = 'distance'
-std = 'sd'
+filename = (r'path\file.shp')
+output = 'outputname'
+size = 63
+prob = 0.7
 
 # application
-create_sector_kml(data,x_field,y_field,angle,distance,std,name='name', points=50,output='POLYGONS_FILE')
+convex_cluster(filename, output, size, prob)
 ```
 
 When the variables displayed are:
 
-**data:** the given pandas dataframe
+**filename:** the given shapefile path
 
-**x_field:** x coordiantes field name
+**output:** name for the output shapefile
 
-**y_field:** y coordiantes field name
+**size:** min_cluster_size value for HDBSCAN clustering 
 
-**angle:** sector main angle field name
-
-**distance:** distance of the the arc from the origin point field name
+**prob:** threshold condition for cluster probability value (default: 0, must be between 0 to 1)
 
