@@ -59,7 +59,7 @@ the examples outputs are also attached here.
 To use this code, you just need to import it as follows:
 ``` sh
 # import
-from convex_cluster import convex_cluster as cc
+from convex_cluster import convex_cluster
 
 # define variables
 filename = (r'path\file.shp')
