@@ -27,3 +27,53 @@ All the layers we created as part of the examples of this repository, are also a
 
 The code will returned the data about each of the original points as a new pandas dataframe, along with their probability and label data. In addition, the code will also return the records that composed the SHP that created, also as dataframe.
 
+
+## libraries
+The code uses the following libraries in Python:
+
+**utm**
+
+**numpy**
+
+**simplekml**
+
+**pandas**
+
+## application
+An application of the code is attached to this page under the name: 
+
+**"implementation.py"** 
+the examples outputs are also attached here.
+
+## example for using the code
+To use this code, you just need to import it as follows:
+``` sh
+# import
+from sector_creator import create_sector_kml
+import pandas as pd
+
+# define variables
+data = pd.read_csv(r'path\file.csv')
+name = 'name'
+x_field = 'x'
+y_field = 'y'
+angle = 'angle'
+distance = 'distance'
+std = 'sd'
+
+# application
+create_sector_kml(data,x_field,y_field,angle,distance,std,name='name', points=50,output='POLYGONS_FILE')
+```
+
+When the variables displayed are:
+
+**data:** the given pandas dataframe
+
+**x_field:** x coordiantes field name
+
+**y_field:** y coordiantes field name
+
+**angle:** sector main angle field name
+
+**distance:** distance of the the arc from the origin point field name
+
