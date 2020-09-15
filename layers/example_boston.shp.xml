@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="he"><Esri><CreaDate>20200914</CreaDate><CreaTime>15251200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.5\ArcToolbox\Toolboxes\Data Management Tools.tbx\CreateRandomPoints" Date="20200914" Time="152313">CreateRandomPoints C:\Users\etzion\Documents\ArcGIS\Default.gdb pointtt_4 POLYGONS_BOS\Polygons "0 0 250 250" 100 "0 Meters" POINT 0</Process></lineage></DataProperties></Esri></metadata>
