@@ -14,7 +14,7 @@ As can be seen in the example, the closer a point is to the cluster center, the 
 
 ![density](https://github.com/EtzionData/generate-Convex-Hull-SHP-from-HDBSCAN-clustering-probabilities/blob/master/Picture/example%20-%20smooth%20density%20of%20cluster%20probabilities.png)
 
-Based on these data, we can choose a threshold condition (**"prob"**) from which only we selected to analyze points from the cluster. The code create a boundary around the choosen point using the **Convex Hull** algorithm. Now we get a polygon that defines the cluster boundaries, based on the threshold conditions we have defined.
+Based on these data, we can choose a threshold condition (**"prob"**) from which only we selected to analyze points from the cluster. The code create a boundary around the choosen point using the **Convex Hull** algorithm. Now we get a polygon that defines the cluster boundaries, based on the threshold conditions we have defined. This ploygon focus the cluster boundary to the core so that they include only the point fit the defined threshold.
 
 The boundary generated will be saved as a new SHP file. When we save the data, we will use the **Geographic Coordinate System** that we imported from the SHP file at the beginning of the process. In addition to the geographical boundary, we will add the following data to each row in the new layer:
 -	The number of points belonging to the cluster according to the threshold conditions we set (**"count"**)
