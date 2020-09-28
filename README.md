@@ -81,3 +81,7 @@ When the variables displayed are:
 
 **prob:** threshold condition for cluster probability value (default: 0, must be between 0 to 1)
 
+## License
+MIT © [Etzion Harari](https://github.com/EtzionData)
+
+
