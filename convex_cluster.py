@@ -36,7 +36,7 @@ def convex_hull(df):
     points = np.array([[r['x'], r['y']] for r in rows])
     hull = ConvexHull(points).vertices
     bound = [(x, y) for x, y in points[hull, :]]
-    return bound+[bound[-1]]
+    return bound+[bound[0]]
 
 def calculate_rows(data,prob):
     """
