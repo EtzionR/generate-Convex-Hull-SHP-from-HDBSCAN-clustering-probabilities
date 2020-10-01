@@ -87,21 +87,22 @@ def create_shp(output,rows):
         layer.record(row['name'], row['id'], row['count'], row['center_x'], row['center_y'])
     layer.close()
 
-def convex_cluster(filename, output, size, prob=0):
+def convex_cluster(filename, size, prob=0, output=False):
     """
     Defines a boundary around cluster centers in a given point shapefile.
     :param filename: the given shapefile path
-    :param output: name for the output shapefile
     :param size: min_cluster_size value for HDBSCAN clustering
     :param prob: probability threshold for boundary (default: 0)
+    :param output: name for the output shapefile
     :return: original points df, output shape df
     """
 
     data, proj = loadfile(filename)
     data['label'], data['prob'] = hdbscan_clustering(data, size)
     rows = calculate_rows(data, prob)
-    create_shp(output, rows)
-    create_prj(output, proj)
+    if output:
+        create_shp(output, rows)
+        create_prj(output, proj)
 
     return data, pd.DataFrame(rows)
 
