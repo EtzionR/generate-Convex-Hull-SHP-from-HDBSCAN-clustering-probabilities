@@ -10,7 +10,7 @@ Based on the given coordinates, the code performs clustering using the **HDBSCAN
 
 ![probability](https://github.com/EtzionData/generate-Convex-Hull-SHP-from-HDBSCAN-clustering-probabilities/blob/master/Picture/example%20-%20cluster%20probability%20values.png)
 
-As can be seen in the example, the closer a point is to the cluster center, the higher its probability, and closer to the value 1. In contrast, points farther from the center approach to 0. Every cluster can have a different density, based on its distribution characteristics. As you can see, different clusters can have a completely different density (the code used to generate the plot and documentation is available here: [**multi-smooth-density-plot**](https://github.com/EtzionData/create-multi-smooth-density-plot)):
+As can be seen in the example, the closer a point is to the cluster center, the higher its probability, and closer to the value 1. In contrast, points farther from the center approach to 0. Every cluster can have a different density, based on its distribution characteristics. As you can see, different clusters can have a completely different density (the code used to generate this plot with full documentation available here: [**multi-smooth-density-plot**](https://github.com/EtzionData/create-multi-smooth-density-plot)):
 
 ![density](https://github.com/EtzionData/generate-Convex-Hull-SHP-from-HDBSCAN-clustering-probabilities/blob/master/Picture/example%20-%20smooth%20density%20of%20cluster%20probabilities.png)
 
