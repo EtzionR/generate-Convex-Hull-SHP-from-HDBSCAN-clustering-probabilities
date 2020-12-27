@@ -1,7 +1,7 @@
 # Generate-Convex-Hull-SHP-from-HDBSCAN-clustering-probabilities
 Defines a boundary around cluster centers in a given point-layer shapefile.
 
-## Introduction
+## Overview
 When we want to make a division into clusters of geographical coordinates, we often get inaccurate results. This is because the clustering algorithm often assigns points to a some cluster that do not necessarily have to be associated with it. This outcome creates a situation in which it is more difficult to define the boundaries of the cluster. In order to create a solution to this gap, the code ["**convex_cluster.py**"](https://github.com/EtzionData/generate-Convex-Hull-SHP-from-HDBSCAN-clustering-probabilities/blob/master/convex_cluster.py) was developed.
 
 The code receives in the first step a esri shapefile (**SHP**), and extracts the X and Y coordinates from it. Another information he produces from the SHP is the **Geographic Coordinate System** of the layer, which will be used to save the code output as a new SHP.
