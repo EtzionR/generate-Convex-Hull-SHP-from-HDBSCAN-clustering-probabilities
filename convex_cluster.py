@@ -1,3 +1,7 @@
+# Create by Etzion Harari
+# https://github.com/EtzionR
+
+# Load libraries:
 from scipy.spatial import ConvexHull
 from hdbscan import HDBSCAN
 import shapefile as shp
@@ -106,3 +110,4 @@ def convex_cluster(filename, size, prob=0, output=False):
 
     return data, pd.DataFrame(rows)
 
+# MIT © Etzion Harari
